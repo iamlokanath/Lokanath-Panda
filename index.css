@@ -6,6 +6,7 @@ body {
   height: 100%;
   background: rgb(139, 201, 228);
   background: linear-gradient(to bottom ,rgb(139, 201, 228),rgb(100, 192, 231)) no-repeat;
+  scroll-behavior: smooth;
 }
 
 @keyframes body {
