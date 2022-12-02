@@ -147,11 +147,8 @@ body {
 
 /* left navbar */
 .left {
-  /* margin: 50px 200px 0px 20px; */
 
-  margin: 25px 1110px 0px 146px;
-  /* margin-left: 154px;
-  margin-top: 43px; */
+  margin: 25px 1214px 0px 146px;
 }
 
 .left button {
@@ -195,14 +192,14 @@ body {
 }
 
 .about3 {
-  margin: 8px 0px 0 639px;
+  margin: 8px 0px 0 659px;
   font-family: 'Baloo Bhai 2', cursive;
   font-size: 1.5vw;
 }
 
 .social_handle {
 
-  margin-left: 613px;
+  margin-left: 642px;
 }
 
 .social_handle h3 {
@@ -258,7 +255,7 @@ body {
 /* project section */
 
 .projects_list {
-  margin-left: 656px;
+  margin-left: 680px;
   margin-top: 35px;
   
 }
@@ -274,7 +271,7 @@ body {
 }
 
 .projects .button1 {
-  padding: 10px 293px 10px 293px;
+  padding: 10px 216px 10px 215px;
   margin-top: 2rem;
   border: 1px solid black;
   border-radius: 3px;
@@ -282,7 +279,7 @@ body {
 }
 
 .projects .button2 {
-  padding: 10px 293px 10px 293px;
+  padding: 10px 254px 10px 254px;
   margin-top: 2rem;
   border: 1px solid black;
   border-radius: 3px;
@@ -290,7 +287,9 @@ body {
 }
 
 .projects .button3 {
-  padding: 10px 293px 10px 293px;
+ 
+  padding: 10px 300px 10px 298px;
+
   margin-top: 2rem;
   border: 1px solid black;
   border-radius: 3px;
