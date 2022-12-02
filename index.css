@@ -1,0 +1,326 @@
+body {
+  padding: 0;
+
+  margin: 0;
+
+  min-height: 180vh;
+
+  background-color: rgb(139, 201, 228);
+
+  animation: body 1s linear;
+}
+
+@keyframes body {
+  to {
+    /* background-color: rgb(19, 48, 97); */
+    background-color: rgb(100, 192, 231);
+  }
+}
+
+.progress {
+  height: 3px;
+
+  width: 0%;
+
+  background-color: #fff;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  animation: progress 1s linear;
+}
+
+@keyframes progress {
+  to {
+    background-color: rgb(20, 255, 226);
+
+    width: 100%;
+  }
+}
+
+.cube-wrap {
+  --size: 30vmin;
+
+  position: fixed;
+
+  top: 50%;
+
+  left: -1%;
+
+  width: 0;
+
+  height: 0;
+
+  perspective: 100vmin;
+}
+
+.cube {
+  transform-style: preserve-3d;
+
+  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+
+  animation: cube 1s linear;
+}
+
+@keyframes cube {
+  to {
+    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  }
+}
+
+.side {
+  position: absolute;
+
+  width: var(--size);
+
+  height: var(--size);
+
+  background-color: #eee;
+
+  backface-visibility: visible;
+
+  top: calc(var(--size) * -0.5);
+
+  left: calc(var(--size) * -0.5);
+}
+
+.top {
+  background-color: #fff;
+
+  transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
+}
+
+.bottom {
+  background-color: #999;
+
+  transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
+}
+
+.left {
+  background-color: #ccc;
+
+  transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
+}
+
+.right {
+  background-color: #ddd;
+
+  transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
+}
+
+.front {
+  background-color: #aaa;
+
+  transform: translateZ(calc(var(--size) * 0.5));
+}
+
+.back {
+  background-color: #bbb;
+
+  transform: translateZ(calc(var(--size) * -0.5));
+}
+
+:root * {
+  /* Pause the animation */
+
+  animation-play-state: paused;
+
+  /* Bind the animation to scroll */
+
+  animation-delay: calc(var(--scroll) * -1s);
+
+  /* These last 2 properites clean up overshoot weirdness */
+
+  animation-iteration-count: 1;
+
+  animation-fill-mode: both;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;800&family=Poppins:wght@300&display=swap');
+
+
+/* left navbar */
+.left {
+  /* margin: 50px 200px 0px 20px; */
+
+  margin: 25px 1110px 0px 146px;
+  /* margin-left: 154px;
+  margin-top: 43px; */
+}
+
+.left button {
+  padding: 8px 10px 8px 10px;
+  
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+/* left navbar ends */
+
+/* profile starts */
+.profile img {
+  border-radius: 50%;
+}
+
+.profile {
+  margin: 0px 628px 0 653px;
+}
+
+.nam {
+  margin: 6px 0px 20px 596px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+
+}
+
+
+.about1 {
+  margin: 8px 0px 0 391px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.5vw;
+}
+
+.about2 {
+  margin: 8px 0px 0 310px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.5vw;
+}
+
+.about3 {
+  margin: 8px 0px 0 639px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.5vw;
+}
+
+.social_handle {
+
+  margin-left: 613px;
+}
+
+.social_handle h3 {
+  font-size: 2vw;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.social {
+  margin: 8px 0px 0 374px;
+}
+
+.social .button1 {
+  padding: 10px 293px 10px 293px;
+  /* margin-top: 2rem;    */
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.social .button2 {
+  padding: 10px 277px 10px 277px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.social .button3 {
+  padding: 10px 282px 10px 282px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.social .button4 {
+  padding: 10px 281px 10px 281px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.social .button5 {
+  padding: 10px 294px 10px 294px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+/* project section */
+
+.projects_list {
+  margin-left: 656px;
+  margin-top: 35px;
+  
+}
+
+.projects_list h3 {
+  font-size: 2vw;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.projects {
+  margin: -30px 0px 0 372px;
+}
+
+.projects .button1 {
+  padding: 10px 293px 10px 293px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.projects .button2 {
+  padding: 10px 293px 10px 293px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.projects .button3 {
+  padding: 10px 293px 10px 293px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.projects .button4 {
+  padding: 10px 293px 10px 293px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+.projects .button5 {
+  padding: 10px 293px 10px 293px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+
+footer {
+  margin-left: 639px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+footer h3 {
+  font-size: 2vw;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
